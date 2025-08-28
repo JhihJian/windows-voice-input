@@ -1,0 +1,22 @@
+{
+    "model": {
+        "name": "paraformer-zh-streaming",
+        "local_path": "./iic/paraformer-zh-streaming",
+        "vad_model_path": "./iic/fsmn-vad",
+        "sense_voice_path": "./iic/SenseVoiceSmall"
+    },
+    "audio": {
+        "sample_rate": 16000,
+        "chunk_size": [0, 10, 5],
+        "encoder_chunk_look_back": 4,
+        "decoder_chunk_look_back": 1
+    },
+    "input": {
+        "caps_long_press_duration": 0.5,
+        "enable_caps_toggle": true
+    },
+    "output": {
+        "incremental_mode": true,
+        "cross_app_input": true
+    }
+}
